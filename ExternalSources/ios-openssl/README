@@ -1,0 +1,41 @@
+This script builds OpenSSL 1.0.0a for iOS.
+
+It builds multi-architecture libaries with armv6, armv7 and i386.
+
+This script is known to work with the following combination of software versions:
+
+ * MacOS X 10.6.5
+ * XCode 3.2.5 & iOS SDK 4.2
+
+The compiled libraries should be downward compatible to iOS 3.1.2 at least.
+
+Building is done by invoking the build.sh script:
+
+ ./build.sh
+
+It will take about 5 minutes on a modern Mac. The result of the build can be found at:
+
+ lib/ - will contain libssl.a and libcrypto.a
+ include/ - will contain all OpenSSL headers
+
+If you just want cryptographic functions then you can skip libssl.a and just add
+libcrypto.a to your project.
+
+Making your code find the OpenSSL headers works best if the path to the include director is
+added to the 'Header Search Paths' in your target settings.
+
+The Example directory contains a little sample app. It calculates a SHA1 digest using
+the OpenSSL API.
+
+IMPORTANT
+
+I included pre-compiled binaries of the openssl libraries in this project mostly for my
+own convenience. But you should really not trust me and do two things:
+
+ 1) Verify that the openssl-1.0.0a.tar.gz file is authentic by comparing it's SHA1
+    hash to the one found on http://www.openssl.org/source/ You can do this with
+    the 'openssl sha1 openssl-1.0.0a.tar.gz' command.
+ 2) Compile your own version of the library as explained above
+
+Enjoy :-)
+

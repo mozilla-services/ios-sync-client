@@ -1,0 +1,24 @@
+ASIHTTPRequest is an easy to use wrapper around the CFNetwork API that makes some of the more tedious aspects of communicating with web servers easier. It is written in Objective-C and works in both Mac OS X and iPhone applications.
+
+It is suitable performing basic HTTP requests and interacting with REST-based services (GET / POST / PUT / DELETE). The included ASIFormDataRequest subclass makes it easy to submit POST data and files using multipart/form-data.
+
+It provides:
+* A straightforward interface for submitting data to and fetching data from webservers
+* Download data to memory or directly to a file on disk
+* Submit files on local drives as part of POST data, compatible with the HTML file input mechanism
+* Stream request bodies directly from disk to the server, to conserve memory
+* Resume for partial downloads
+* Easy access to request and response HTTP headers
+* Progress delegates (NSProgressIndicators and UIProgressViews) to show information about download AND upload progress
+* Auto-magic management of upload and download progress indicators for operation queues
+* Basic, Digest + NTLM authentication support, credentials are automatically re-used for the duration of a session, and can be stored for later in the Keychain.
+* Cookie support
+* GZIP support for response data AND request bodies
+* Persistent connections support
+* Support for Amazon S3
+* [NEW] Full support for Rackspace Cloud Files
+* Supports manual and autodetected proxies, authenticating proxies, and PAC file autoconfiguration
+* Based on NSOperation to make queuing requests and background operation easy
+* Comes with a broad range of unit tests
+
+Documentation is available "here":http://allseeing-i.com/ASIHTTPRequest.

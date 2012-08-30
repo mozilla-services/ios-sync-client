@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Client Path</key>
+	<string>clients/%s</string>
+	<key>Client Symkey Path</key>
+	<string>clients</string>
+	<key>Private Key Path</key>
+	<string>keys/privkey</string>
+	<key>Keys Path</key>
+	<string>crypto/keys</string>
+	<key>Public Key Path</key>
+	<string>keys/pubkey</string>
+	<key>Bookmarks Update Path</key>
+	<string>bookmarks/?full=1&amp;newer=%f</string>
+	<key>History Full Refresh Path</key>
+	<string>history/?full=1&amp;sort=index&amp;limit=%d</string>
+	<key>History Incremental Update Path</key>
+	<string>history/?full=1&amp;newer=%f</string>
+	<key>Tabs Path</key>
+	<string>tabs/?full=1</string>
+	<key>Meta Global Path</key>
+	<string>meta/global</string>
+	<key>Node Query Base URL</key>
+	<string>https://auth.services.mozilla.com/</string>
+	<key>Node Query Suffix</key>
+	<string>user/1.0/%s/node/weave</string>
+	<key>Email Submit</key>
+	<string>http://localhost/subscriptions/subscribe/</string>
+	<key>TOS URL</key>
+	<string>https://localhost/tos/</string>
+	<key>PP URL</key>
+	<string>https://localhost/privacy-policy/</string>
+	<key>Login Help URL</key>
+	<string>http://localhost/kb/Cannot+log+in+to+Firefox+Home+App</string>
+	<key>Google URL</key>
+	<string>http://www.google.com/search?ie=UTF-8&amp;oe=UTF-8&amp;sourceid=navclient&amp;gfns=1&amp;q=%@</string>
+	<key>Collections Info Path</key>
+	<string>info/collections</string>
+</dict>
+</plist>
